@@ -6,11 +6,12 @@
     width: 160px;
     fill: rgb(255,255,255);
     transform-origin: 50% 50%;
+    animation-duration: 0.5s;
   }
 
   &:hover {
     .burger__line {
-      animation-duration: 0.8s;
+      animation-duration: 0.5s;
       animation-fill-mode: forwards;
 
       &--1 {
@@ -29,21 +30,21 @@
 }
 
 @keyframes line-1 {
-  15% {
+  30% {
     y: 5;
   }
-  50% {
+  65% {
     y: 90;
     transform: rotate(0);
   }
   100% {
+    y: 90;
     transform: rotate(45deg);
   }
 }
 
 @keyframes line-2 {
-  50% {
-    y: 90;
+  65% {
     transform: rotate(0);
   }
   100% {
@@ -52,14 +53,15 @@
 }
 
 @keyframes line-3 {
-  15% {
+  30% {
     y: 175;
   }
-  50% {
+  65% {
     y: 90;
     transform: rotate(0);
   }
   100% {
+    y: 90;
     transform: rotate(-45deg);
   }
 }

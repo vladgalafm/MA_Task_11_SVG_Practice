@@ -137,12 +137,15 @@ h2 {
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .burger:hover .burger__line {
-  -webkit-animation-duration: 0.8s;
-  -o-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -167,46 +170,49 @@ h2 {
 }
 
 @-webkit-keyframes line-1 {
-  15% {
+  30% {
     y: 5;
   }
-  50% {
+  65% {
     y: 90;
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 }
 
 @-o-keyframes line-1 {
-  15% {
+  30% {
     y: 5;
   }
-  50% {
+  65% {
     y: 90;
     -o-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 }
 
 @keyframes line-1 {
-  15% {
+  30% {
     y: 5;
   }
-  50% {
+  65% {
     y: 90;
     -webkit-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -214,8 +220,7 @@ h2 {
 }
 
 @-webkit-keyframes line-2 {
-  50% {
-    y: 90;
+  65% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
@@ -226,8 +231,7 @@ h2 {
 }
 
 @-o-keyframes line-2 {
-  50% {
-    y: 90;
+  65% {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
@@ -238,8 +242,7 @@ h2 {
 }
 
 @keyframes line-2 {
-  50% {
-    y: 90;
+  65% {
     -webkit-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
@@ -252,46 +255,49 @@ h2 {
 }
 
 @-webkit-keyframes line-3 {
-  15% {
+  30% {
     y: 175;
   }
-  50% {
+  65% {
     y: 90;
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 }
 
 @-o-keyframes line-3 {
-  15% {
+  30% {
     y: 175;
   }
-  50% {
+  65% {
     y: 90;
     -o-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 }
 
 @keyframes line-3 {
-  15% {
+  30% {
     y: 175;
   }
-  50% {
+  65% {
     y: 90;
     -webkit-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
+    y: 90;
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
