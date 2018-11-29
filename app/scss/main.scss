@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+h2 {
+  margin: 30px;
+}
+
+.star-path {
+  fill: #39B54A;
+}
+
+.star-object {
+  margin: 0 50px;
+  width: 200px;
+  height: 200px;
+}
+
+@import "responsive";
+@import "buttons";
+@import "burger";

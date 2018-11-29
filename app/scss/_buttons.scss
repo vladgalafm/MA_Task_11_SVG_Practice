@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  height: 200px;
+  background-color: #f6eafe;
+
+  &--dark {
+    background-color: #29282e;
+  }
+
+  &__background {
+    fill: #e90b66;
+    opacity: 0.25;
+    transition-duration: 0.5s;
+
+    &--dark {
+      fill: #670b9b;
+    }
+  }
+
+  &__btn {
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #29282e;
+    cursor: pointer;
+
+    &:hover {
+      & > .button__background {
+        x: 0;
+        width: 400px;
+        opacity: 1;
+      }
+
+      & > .button__text {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &__rect {
+    stroke: #e90b66;
+    stroke-width: 6;
+    fill: transparent;
+
+    &--dark {
+      stroke: #670b9b;
+    }
+  }
+
+  &__text {
+    font: bold 30px sans-serif;
+    fill: #e90b66;
+    transition-duration: 0.25s;
+
+    &--dark {
+      fill: #670b9b;
+    }
+  }
+}

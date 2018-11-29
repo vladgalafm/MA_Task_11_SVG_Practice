@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Practice</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<h2>1. Create simple figures</h2>
+<svg viewbox="0 0 950 350" height="350">
+  <line x1="10" y1="10" x2="310" y2="10" stroke-width="1" stroke="rgb(0,255,0)"></line>
+  <circle cx="150" cy="150" r="125" stroke-width="1" stroke="rgb(0,0,0)" fill="rgb(0,0,255)"></circle>
+  <line y1="30" x1="300" y2="330" x2="600" stroke-width="3" stroke="rgb(0,0,0)"></line>
+  <line y1="30" x2="300" y2="330" x1="600" stroke-width="3" stroke="rgb(255,0,0)"></line>
+  <ellipse rx="200" ry="100" cy="190" cx="720" stroke-width="10" stroke-dasharray="4" stroke="rgb(0,0,0)" fill="transparent"></ellipse>
+</svg>
+
+<h2>2. 3 ways to add svg to the document</h2>
+<svg height="200" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+  <path class="star-path" d="M100,0C44.77,0,0,44.77,0,100c0,55.23,44.77,100,100,100s100-44.77,100-100C200,44.77,155.23,0,100,0z
+	 M146.19,163.57L100,139.29l-46.19,24.28l8.82-51.43L25.27,75.72l51.64-7.5L100,21.42l23.09,46.79l51.64,7.5l-37.37,36.42
+	L146.19,163.57z"/>
+</svg>
+<object class="star-object" type="image/svg+xml" data="svg/circle-star.svg"></object>
+<img width="200px" class="star-base64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMDAgMjAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzM5QjU0QTt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDAsMEM0NC43NywwLDAsNDQuNzcsMCwxMDBjMCw1NS4yMyw0NC43NywxMDAsMTAwLDEwMHMxMDAtNDQuNzcsMTAwLTEwMEMyMDAsNDQuNzcsMTU1LjIzLDAsMTAwLDB6CgkgTTE0Ni4xOSwxNjMuNTdMMTAwLDEzOS4yOWwtNDYuMTksMjQuMjhsOC44Mi01MS40M0wyNS4yNyw3NS43Mmw1MS42NC03LjVMMTAwLDIxLjQybDIzLjA5LDQ2Ljc5bDUxLjY0LDcuNWwtMzcuMzcsMzYuNDIKCUwxNDYuMTksMTYzLjU3eiIvPgo8L3N2Zz4K">
+
+<h2>3. Loader</h2>
+<svg viewBox="0 0 220 220" height="220">
+  <circle id="loader" r="100" cx="110" cy="110" stroke-width="20" stroke="rgb(255,0,0)" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="628" fill="transparent">
+    <animate
+      xlink:href="#loader"
+      attributeName="stroke-dashoffset"
+      from="628" to="0"
+      dur="2s" repeatCount="indefinite">
+    </animate>
+  </circle>
+</svg>
+
+<h2>4. Responsive SVG</h2>
+<svg class="responsive" viewBox="0 0 800 400">
+  <svg width="400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+  <path class="star-path" d="M100,0C44.77,0,0,44.77,0,100c0,55.23,44.77,100,100,100s100-44.77,100-100C200,44.77,155.23,0,100,0z
+	 M146.19,163.57L100,139.29l-46.19,24.28l8.82-51.43L25.27,75.72l51.64-7.5L100,21.42l23.09,46.79l51.64,7.5l-37.37,36.42
+	L146.19,163.57z"/>
+  </svg>
+  <svg width="400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="400" y="0"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+  <path class="star-path" d="M100,0C44.77,0,0,44.77,0,100c0,55.23,44.77,100,100,100s100-44.77,100-100C200,44.77,155.23,0,100,0z
+	 M146.19,163.57L100,139.29l-46.19,24.28l8.82-51.43L25.27,75.72l51.64-7.5L100,21.42l23.09,46.79l51.64,7.5l-37.37,36.42
+	L146.19,163.57z"/>
+  </svg>
+</svg>
+
+<h2>5. Animated buttons</h2>
+<div class="button">
+  <svg class="button__btn" viewBox="0 0 400 80" width="400" height="80">
+    <rect class="button__rect" x="3" y="3" width="394" height="74"></rect>
+    <rect class="button__background" x="200" y="0" width="0" height="80"></rect>
+    <text class="button__text" x="120" y="50">CONTINUE</text>
+  </svg>
+</div>
+<div class="button button--dark">
+  <svg class="button__btn" viewBox="0 0 400 80" width="400" height="80">
+    <rect class="button__rect button__rect--dark"  x="3" y="3" width="394" height="74"></rect>
+    <rect class="button__background button__background--dark" x="200" y="0" width="0" height="80"></rect>
+    <text class="button__text button__text--dark" x="120" y="50">CONTINUE</text>
+  </svg>
+</div>
+
+<h2>6. Hamburger menu (hover to see animation)</h2>
+<svg class="burger" id="burger" viewBox="0 0 200 200" height="200">
+  <rect class="burger__line burger__line--1" id="line-1" x="20" y="30" rx="10" ry="10"></rect>
+  <rect class="burger__line burger__line--2" id="line-2" x="20" y="90" rx="10" ry="10"></rect>
+  <rect class="burger__line burger__line--3" id="line-3" x="20" y="150" rx="10" ry="10"></rect>
+  <!--
+  <animate xlink:href="#line-1"
+           attributeName="y"
+           from="30" to="90"
+           begin="burger.mouseover" end="burger.mouseout" dur="0.5s"
+           values="30; 5; 90" keyTimes="0; 0.3; 1"
+           id="line-1-start" fill="freeze">
+  </animate>
+  <animate xlink:href="#line-3"
+           attributeName="y"
+           from="150" to="90"
+           begin="burger.mouseover" end="burger.mouseout" dur="0.5s"
+           values="150; 175; 90" keyTimes="0; 0.3; 1"
+           fill="freeze">
+  </animate>
+  <animateTransform xlink:href="#line-1"
+                    attributeName="transform" type="rotate"
+                    from="0 100 100" to="45 100 100"
+                    begin="line-1-start.begin + 0.5s" end="burger.mouseout" dur="0.5s" fill="restart">
+  </animateTransform>
+  <animateTransform xlink:href="#line-2"
+                    attributeName="transform" type="rotate"
+                    from="0 100 100" to="45 100 100"
+                    begin="line-1-start.begin + 0.5s" end="burger.mouseout" dur="0.5s" fill="restart">
+  </animateTransform>
+  <animateTransform xlink:href="#line-3"
+                    attributeName="transform" type="rotate"
+                    from="0 100 100" to="-45 100 100"
+                    begin="line-1-start.begin + 0.5s" end="burger.mouseout" dur="0.5s" fill="restart">
+  </animateTransform>-->
+</svg>
+
+</body>
+</html>

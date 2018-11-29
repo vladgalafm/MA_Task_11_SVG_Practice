@@ -1,0 +1,65 @@
+.burger {
+  background-color: #000000;
+
+  &__line {
+    height: 20px;
+    width: 160px;
+    fill: rgb(255,255,255);
+    transform-origin: 50% 50%;
+  }
+
+  &:hover {
+    .burger__line {
+      animation-duration: 0.8s;
+      animation-fill-mode: forwards;
+
+      &--1 {
+        animation-name: line-1;
+      }
+
+      &--2 {
+        animation-name: line-2;
+      }
+
+      &--3 {
+        animation-name: line-3;
+      }
+    }
+  }
+}
+
+@keyframes line-1 {
+  15% {
+    y: 5;
+  }
+  50% {
+    y: 90;
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes line-2 {
+  50% {
+    y: 90;
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes line-3 {
+  15% {
+    y: 175;
+  }
+  50% {
+    y: 90;
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
